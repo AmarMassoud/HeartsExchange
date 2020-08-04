@@ -1,0 +1,4 @@
+name: HeartsExchange
+version: 1.0.0
+main: services.midnight.amar.heartsexchange.HeartsExchange
+authors: [Amar]
