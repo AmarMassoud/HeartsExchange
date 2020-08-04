@@ -24,7 +24,7 @@ public class OnDamageEvent implements Listener {
                 }
                 p.setGameMode(GameMode.SPECTATOR);
                 p.sendMessage(HeartsExchange.colorize("&cYour life has been sacrificed for everyone's health to be reset."));
-
+                p.setHealth(20);
         } else if(finalHealth >= 20) {
 
             }else {
@@ -34,7 +34,6 @@ public class OnDamageEvent implements Listener {
                             onlinePlayers.setHealth(finalHealth);
                             DataYml.getDataYml().set("health", (int) finalHealth);
                             DataYml.saveDataYml();
-                            onlinePlayers.sendMessage(HeartsExchange.colorize("&cYour hearts has been set to &b" + (int) finalHealth + " &cbecause &a" + p.getName() + " &4took damage"));
                         }
                     } else {
                     }
